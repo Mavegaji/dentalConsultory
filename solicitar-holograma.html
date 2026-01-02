@@ -3,43 +3,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyectos de Hologramas | Hologramas CR</title> <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Outfit&display=swap" rel="stylesheet">
+    <title>Clínica Dental | Sonrisas Saludables</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMX8XPWR30"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GMX8XPWR30');
-    </script>
-    
 </head>
 <body>
-<div class="holo-rings">
-    <div class="holo-ring"></div>
-    <div class="holo-ring"></div>
-    <div class="holo-ring"></div>
-</div>
 
-<div id="particles-js"></div>
-
-<header class="main-header glass">
+<header class="main-header dental-glass">
     <div class="container">
         <div class="header-top">
-            <a href="index.html" class="logo-link"> <img src="images/logo.png" alt="Logo Hologramas CR" class="logo" />
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-dental.png" alt="Logo Clínica Dental" class="logo" />
             </a>
-            <div class="cart-panel-header">
-                <a href="cart.html" class="cart-button" aria-label="Ver carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cart-count" class="cart-count">0</span>
+            
+            <div class="header-contact-info">
+                <a href="https://wa.me/tu-numero" class="btn-appointment-quick">
+                    <i class="fa-brands fa-whatsapp"></i> Urgencias
                 </a>
             </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+
+            <button class="menu-toggle" id="menuToggle">
                  <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -47,10 +31,10 @@
         <nav class="main-nav">
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de Nosotros</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="services.html" aria-current="page">Servicios</a></li> 
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="servicios.html" class="active">Especialidades</a></li>
+                <li><a href="equipo.html">Nuestro Equipo</a></li>
+                <li><a href="sedes.html">Sedes</a></li> 
+                <li><a href="contacto.html" class="btn-highlight">Agendar Cita</a></li>
             </ul>
         </nav>
     </div>
@@ -58,72 +42,63 @@
 
 <main class="content">
     <div class="container">
-        
         <div class="page-header">
-            <h1>Hologramas en Acción</h1>
-            <p>Explora algunos de nuestros proyectos y visualiza el potencial para tu marca.</p>
+            <h1>Nuestras Especialidades</h1>
+            <p>Cuidamos tu salud bucal con tecnología de vanguardia y un equipo humano excepcional.</p>
         </div>
-        <div class="video-gallery">
-            <div class="video-card glass">
-                <h2>Lanzamiento de Producto</h2>
-                <video controls poster="images/poster1.jpg">
-                    <source src="videos/promo-cion.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
+
+        <div class="services-grid">
+            <div class="service-card glass-light">
+                <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+                <h2>Odontología General</h2>
+                <p>Limpiezas, calzas y prevención para toda la familia.</p>
+                <a href="contacto.html" class="btn-outline">Más info</a>
             </div>
-            <div class="video-card glass">
-                <h2>Exhibición en Museo</h2>
-                <video controls poster="images/poster2.jpg">
-                    <source src="videos/exhibicion-museo.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
+
+            <div class="service-card glass-light">
+                <div class="service-icon"><i class="fa-solid fa-align-center"></i></div>
+                <h2>Ortodoncia</h2>
+                <p>Brackets y alineadores invisibles para una sonrisa perfecta.</p>
+                <a href="contacto.html" class="btn-outline">Ver planes</a>
             </div>
-            <div class="video-card glass">
-                <h2>Activación para Concierto</h2>
-                <video controls poster="images/poster3.jpg">
-                    <source src="videos/activacion-concierto.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <div class="video-card glass">
-                <h2>Asistente Virtual Corporativo</h2>
-                <video controls poster="images/poster4.jpg">
-                    <source src="videos/asistente-virtual.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
+
+            <div class="service-card glass-light">
+                <div class="service-icon"><i class="fa-solid fa-sparkles"></i></div>
+                <h2>Blanqueamiento</h2>
+                <p>Recupera el brillo de tus dientes en una sola sesión.</p>
+                <a href="contacto.html" class="btn-outline">Agendar</a>
             </div>
         </div>
     </div>
 </main>
 
-
-<section class="cta">
+<section class="cta-booking">
     <div class="container">
-        <h2>¿Listo para crear tu propio holograma?</h2>
-        <p>Nuestro equipo de expertos está preparado para convertir tu visión en una realidad tridimensional.</p>
-        <a href="contact.html" class="btn-primary">Contacto</a>
+        <h2>¿Tu primera vez con nosotros?</h2>
+        <p>Obtén un 20% de descuento en tu primer diagnóstico completo.</p>
+        <a href="booking.html" class="btn-primary">Reservar Cita en Línea</a>
     </div>
 </section>
 
-
-<footer class="glass">
+<footer class="dental-footer">
   <div class="container">
-    <p>&copy; 2025 Hologramas CR. Todos los derechos reservados.</p>
-    <p>San José, Costa Rica</p>
+    <div class="footer-grid">
+        <div>
+            <p><strong>Clínica Dental</strong></p>
+            <p>San José, Costa Rica</p>
+        </div>
+        <div>
+            <p>Siguenos en redes:</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>&copy; 2026 Clínica Dental. Todos los derechos reservados.</p>
   </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-  const toggleBtn = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
-  toggleBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 
 </body>
 </html>
