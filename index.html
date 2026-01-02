@@ -3,46 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos | Hologramas CR</title>
+    <title>Clínica Dental | Tu Sonrisa, Nuestra Prioridad</title>
+    
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Outfit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMX8XPWR30"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-GMX8XPWR30');
     </script>
-
-    
 </head>
 <body>
-<div class="holo-rings">
-    <div class="holo-ring"></div>
-    <div class="holo-ring"></div>
-    <div class="holo-ring"></div>
-</div>
 
-<div id="particles-js"></div>
-
-<header class="main-header glass">
+<header class="main-header">
     <div class="container">
         
         <div class="header-top">
-            <a href="https://hologramas.cr" class="logo-link">
-                <img src="images/logo.png" alt="Logo Hologramas CR" class="logo" />
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-dental.png" alt="Logo Clínica Dental" class="logo" />
             </a>
-            <div class="cart-panel-header">
-                <a href="cart.html" class="cart-button" aria-label="Ver carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cart-count" class="cart-count">0</span>
+
+            <div class="header-actions">
+                <a href="https://wa.me/TUNUMERO" class="btn-whatsapp-header" aria-label="Contacto por WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i> <span>Urgencias</span>
                 </a>
             </div>
+
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                  <i class="fa-solid fa-bars"></i>
             </button>
@@ -50,35 +40,64 @@
 
         <nav class="main-nav">
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de Nosotros</a></li>
-                <li><a href="products.html" aria-current="page">Productos</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="servicios.html">Especialidades</a></li>
+                <li><a href="nosotros.html">Nuestro Equipo</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="contacto.html" class="btn-highlight">Agendar Cita</a></li>
             </ul>
         </nav>
 
     </div>
 </header>
 
-<section class="hero glass">
+<section class="hero dental-hero">
   <div class="container">
-    <h1>Visualiza el Futuro</h1>
-    <p>Soluciones holográficas 5D para empresas que lideran el mañana.</p>
-    <a href="products.html" class="btn-primary">Explorar Productos</a>
-    <a href="solicitar-holograma.html" class="btn-primary">Solicitar holograma</a>
+    <div class="hero-content">
+        <h1>Tu salud dental en las mejores manos</h1>
+        <p>Cuidamos tu sonrisa con tecnología de vanguardia y un equipo humano especializado en odontología integral.</p>
+        <div class="hero-btns">
+            <a href="contacto.html" class="btn-primary">Reservar mi Cita</a>
+            <a href="servicios.html" class="btn-secondary">Ver Especialidades</a>
+        </div>
+    </div>
   </div>
 </section>
 
-<footer class="glass">
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"La mejor atención que he recibido. El proceso de ortodoncia fue increíble y sin dolor."</p>
+                <span class="patient-name">- María Rodríguez</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Instalaciones de primer nivel y un trato muy profesional. ¡Súper recomendados!"</p>
+                <span class="patient-name">- Juan Carlos Mora</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="dental-footer">
   <div class="container">
-    <p>&copy; 2025 Hologramas CR. Todos los derechos reservados.</p>
-    <p>San José, Costa Rica</p>
+    <div class="footer-info">
+        <p>&copy; 2026 Clínica Dental. Todos los derechos reservados.</p>
+        <p><i class="fa-solid fa-location-dot"></i> San José, Costa Rica</p>
+    </div>
+    <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
   </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="js/script.js"></script>
 
 <script>
   const toggleBtn = document.getElementById("menuToggle");
@@ -88,9 +107,6 @@
     navLinks.classList.toggle("show");
   });
 </script>
-
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 
 </body>
 </html>
